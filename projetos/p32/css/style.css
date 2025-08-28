@@ -1,0 +1,115 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-loader-top: yellow;
+    --color-loader-right: blue;
+    --color-loader-bottom: green;
+    --color-loader-left: red;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.loader {
+    width: 20%;
+    aspect-ratio: 1/1;
+    --anim-top: loader__video__ball--top;
+    --anim-right: loader__video__ball--right;
+    --anim-bottom: loader__video__ball--bottom;
+    --anim-left: loader__video__ball--left;
+}
+
+.loader--personal {
+    --anim-top: loader__personal__ball--top;
+    --anim-right: loader__personal__ball--right;
+    --anim-bottom: loader__personal__ball--bottom;
+    --anim-left: loader__personal__ball--left;
+}
+
+.loader__title {
+    font-family: var(--font-family-default);
+    text-align: center;
+}
+
+.loader__ball {
+    background-color: black;
+    width: 33%;
+    height: 33%;
+
+    border-radius: 100%;
+}
+
+.loader .loader__ball:nth-child(1) {
+    background-color: var(--color-loader-top);
+    transform: translate(100%, 0);
+    animation: var(--anim-top) 1s infinite;
+}
+
+.loader .loader__ball:nth-child(2) {
+    background-color: var(--color-loader-right);
+    transform: translate(200%, 0);
+    animation: var(--anim-right) 1s infinite;
+}
+
+.loader .loader__ball:nth-child(3) {
+    background-color: var(--color-loader-bottom);
+    transform: translate(100%, 0);
+    animation: var(--anim-bottom) 1s infinite;
+}
+
+.loader .loader__ball:nth-child(4) {
+    background-color: var(--color-loader-left);
+    transform: translate(0, -200%);
+    animation: var(--anim-left) 1s infinite;
+}
+
+@keyframes loader__video__ball--top {
+    50% {
+        transform: translate(100%, 200%);
+    }
+}
+
+@keyframes loader__video__ball--right {
+    50% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes loader__video__ball--bottom {
+    50% {
+        transform: translate(100%, -200%);
+    }
+}
+
+@keyframes loader__video__ball--left {
+    50% {
+        transform: translate(200%, -200%);
+    }
+}
+
+@keyframes loader__personal__ball--top {
+    50% {
+        transform: translate(100%, 100%);
+    }
+}
+
+@keyframes loader__personal__ball--right {
+    50% {
+        transform: translate(100%, 0%);
+    }
+}
+
+@keyframes loader__personal__ball--bottom {
+    50% {
+        transform: translate(100%, -100%);
+    }
+}
+
+@keyframes loader__personal__ball--left {
+    50% {
+        transform: translate(100%, -200%);
+    }
+}
