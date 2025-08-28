@@ -1,0 +1,86 @@
+@import url("../../../css/global.css");
+
+:root {
+    --size-toggle-icon: 2.5em;
+    --size-toggle-gap: 0.8em;
+
+    --color-toggle-bg: var(--color-gray-light);
+    --color-toggle-icon: var(--color-gray);
+    --color-toggle-button: var(--color-body);
+    --color-toggle-active: #7d2ae8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    background-color: var(--color-toggle-bg);
+    position: relative;
+    display: flex;
+    width: 40%;
+    min-width: 200px;
+    aspect-ratio: 2/1;
+
+    border-radius: 1000px;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle.active {
+    background-color: var(--color-toggle-active);
+}
+
+.toggle.active .toggle__button {
+    left: calc(100% - var(--size-toggle-gap));
+    transform: translate(-100%, -50%);
+}
+
+.toggle.active .toggle__button > i {
+    color: var(--color-toggle-active);
+}
+
+.toggle__button {
+    background-color: var(--color-body);
+    position: absolute;
+    top: 50%;
+    left: var(--size-toggle-gap);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100% - var(--size-toggle-gap) * 2);
+    aspect-ratio: 1/1;
+
+    border-radius: 100%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+
+    transform: translate(0, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle__button > i {
+    font-size: var(--size-toggle-icon);
+    color: var(--color-toggle-icon);
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 48em) {
+    :root {
+        --size-toggle-icon: 3em;
+        --size-toggle-gap: 1em;
+    }
+}
+
+@media (min-width: 64em) {
+    :root {
+        --size-toggle-icon: 7em;
+        --size-toggle-gap: 2em;
+    }
+}
