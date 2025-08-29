@@ -1,0 +1,224 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-rating-bg: var(--color-white-dark);
+    --color-rating-footer-bg: var(--color-gray-light);
+    --color-rating-focused: #fed151;
+
+    --color-body: linear-gradient(#fed151, #de981f);
+}
+
+body {
+    background: var(--color-body);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    background-color: var(--color-rating-bg);
+    width: 40%;
+    min-width: 350px;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rating__body {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 20px;
+}
+
+.rating__radio {
+    display: none;
+}
+
+.rating__emoji {
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.rating__emoji__container {
+    font-size: 100px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.rating__radio:checked[id="star-1"]
+    ~ .rating__body
+    .rating__emoji__container:first-child {
+    margin-top: calc(-100px * 1);
+}
+.rating__radio:checked[id="star-2"]
+    ~ .rating__body
+    .rating__emoji__container:first-child {
+    margin-top: calc(-100px * 2);
+}
+.rating__radio:checked[id="star-3"]
+    ~ .rating__body
+    .rating__emoji__container:first-child {
+    margin-top: calc(-100px * 3);
+}
+.rating__radio:checked[id="star-4"]
+    ~ .rating__body
+    .rating__emoji__container:first-child {
+    margin-top: calc(-100px * 4);
+}
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__emoji__container:first-child {
+    margin-top: calc(-100px * 5);
+}
+
+.rating__stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rating__stars__icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rating__stars__icon:hover {
+    color: var(--color-rating-focused);
+}
+
+.rating__radio:checked[id="star-1"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-1"],
+.rating__radio:checked[id="star-2"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-2"],
+.rating__radio:checked[id="star-2"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-1"],
+.rating__radio:checked[id="star-3"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-3"],
+.rating__radio:checked[id="star-3"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-2"],
+.rating__radio:checked[id="star-3"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-1"],
+.rating__radio:checked[id="star-4"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-4"],
+.rating__radio:checked[id="star-4"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-3"],
+.rating__radio:checked[id="star-4"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-2"],
+.rating__radio:checked[id="star-4"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-1"],
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-5"],
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-4"],
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-3"],
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-2"],
+.rating__radio:checked[id="star-5"]
+    ~ .rating__body
+    .rating__stars__icon[for="star-1"] {
+    color: var(--color-rating-focused);
+}
+
+.rating__footer {
+    background-color: var(--color-rating-footer-bg);
+    width: calc(100% - 24px);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.rating__footer__message::before {
+    content: "Ainda não sei ao certo...";
+}
+
+.rating__footer__count::before {
+    content: "0 de 5";
+}
+
+.rating__radio:checked[id="star-1"]
+    ~ .rating__footer
+    .rating__footer__message::before {
+    content: "Terrivelmente vergonhoso";
+}
+
+.rating__radio:checked[id="star-1"]
+    ~ .rating__footer
+    .rating__footer__count::before {
+    content: "1 de 5";
+}
+
+.rating__radio:checked[id="star-2"]
+    ~ .rating__footer
+    .rating__footer__message::before {
+    content: "Já vi melhores";
+}
+
+.rating__radio:checked[id="star-2"]
+    ~ .rating__footer
+    .rating__footer__count::before {
+    content: "2 de 5";
+}
+
+.rating__radio:checked[id="star-3"]
+    ~ .rating__footer
+    .rating__footer__message::before {
+    content: "Mais ou menos";
+}
+
+.rating__radio:checked[id="star-3"]
+    ~ .rating__footer
+    .rating__footer__count::before {
+    content: "3 de 5";
+}
+
+.rating__radio:checked[id="star-4"]
+    ~ .rating__footer
+    .rating__footer__message::before {
+    content: "Admito que gostei";
+}
+
+.rating__radio:checked[id="star-4"]
+    ~ .rating__footer
+    .rating__footer__count::before {
+    content: "4 de 5";
+}
+
+.rating__radio:checked[id="star-5"]
+    ~ .rating__footer
+    .rating__footer__message::before {
+    content: "Simplemente amei";
+}
+
+.rating__radio:checked[id="star-5"]
+    ~ .rating__footer
+    .rating__footer__count::before {
+    content: "5 de 5";
+}
