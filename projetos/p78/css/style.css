@@ -31,6 +31,8 @@ main {
 
     border-radius: 10px;
     overflow: hidden;
+
+    box-shadow: 0px 4px 10px #00000025;
 }
 
 .rating__body {
@@ -147,12 +149,13 @@ main {
 }
 
 .rating__footer {
-    background-color: var(--color-rating-footer-bg);
     width: calc(100% - 24px);
 
     display: flex;
     justify-content: space-between;
     padding: 12px;
+
+    border-top: 1px solid var(--color-rating-footer-bg);
 }
 
 .rating__footer__message::before {
