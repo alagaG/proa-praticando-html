@@ -1,0 +1,79 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-body: #dde1e7;
+    --color-shadow-neumorphism-light: #ffffff73;
+    --color-shadow-neumorphism-dark: rgba(94, 104, 121, 0.288);
+
+    --color-keyboard-bg: var(--color-body);
+    --color-keyboard-txt: var(--color-gray);
+    --color-keyboard-focus-txt: #3498db;
+    --size-keyboard-gap: 12px;
+    --size-keyboard-rounding: 10px;
+    --size-keyboard-font: 16px;
+
+    --color-info-bg: var(--color-keyboard-bg);
+    --color-info-txt: var(--color-keyboard-txt);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    background-color: var(--color-keyboard-bg);
+
+    padding: 20px;
+
+    box-shadow: 4px 4px 8px 2px var(--color-shadow-neumorphism-dark),
+        -4px -4px 8px 2px var(--color-shadow-neumorphism-light);
+
+    border-radius: var(--size-keyboard-rounding);
+}
+
+.keyboard__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-keyboard-gap);
+}
+
+.keyboard__keys {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: var(--size-keyboard-gap);
+}
+
+.keyboard__keys input {
+    background-color: var(--color-keyboard-bg);
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-keyboard-txt);
+    font-size: var(--size-keyboard-font);
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: calc(var(--size-keyboard-rounding) / 3);
+    cursor: pointer;
+
+    box-shadow: 3px 3px 7px var(--color-shadow-neumorphism-dark),
+        -2px -2px 2px var(--color-shadow-neumorphism-light);
+}
+
+.keyboard__keys input:focus {
+    color: var(--color-keyboard-focus-txt);
+    box-shadow: inset 3px 3px 7px var(--color-shadow-neumorphism-dark),
+        inset -3px -3px 2px var(--color-shadow-neumorphism-light);
+}
+
+.keyboard__keys input[value="space"] {
+    width: 60%;
+}
