@@ -1,0 +1,74 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-body: #4070f4;
+    --color-pagination-disabled-txt: var(--color-gray);
+    --color-pagination-disabled-bg: var(--color-white-dark);
+    --color-pagination-hover-bg: var(--color-body);
+    --color-pagination-hover-txt: var(--color-white);
+    --color-pagination-button-bg: var(--color-white-dark);
+    --color-pagination-button-txt: var(--color-black);
+    --color-pagination-active-bg: var(--color-body);
+    --color-pagination-active-txt: var(--color-white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__container,
+.pagination__links {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.pagination__container {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pagination__button,
+.pagination__link {
+    background-color: var(--color-pagination-button-bg);
+    width: 45px;
+    height: 45px;
+
+    color: var(--color-pagination-button-txt);
+    font-size: 20px;
+
+    border: none;
+    border-radius: 8px;
+}
+
+.pagination__button {
+    cursor: pointer;
+}
+
+.pagination__button:disabled,
+.pagination__button:disabled:hover {
+    background-color: var(--color-pagination-disabled-bg);
+    color: var(--color-pagination-disabled-txt);
+    cursor: initial;
+}
+
+.pagination__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.pagination__link:hover,
+.pagination__button:hover {
+    background-color: var(--color-pagination-hover-bg);
+    color: var(--color-pagination-hover-txt);
+}
+
+.pagination__link.pagination__link--active {
+    background-color: var(--color-pagination-active-bg);
+    color: var(--color-pagination-active-txt);
+}

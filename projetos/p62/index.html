@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Um projeto de estudo de HTML e CSS, no caso, paginação funcional"
+        />
+        <meta name="author" content="Matheus de Oliveira Caldas" />
+        <meta name="keywords" content="HTML, CSS, JS, Estudo, Paginação" />
+        <meta name="robots" content="index, follow" />
+        <title>Projeto 62 - Paginação Funcional</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <aside id="info">
+            <div id="info__container">
+                <a href="../../index.html" class="info__link info__link--back">
+                    <i class="bi bi-arrow-left"> Voltar</i>
+                </a>
+                <div id="info__header">
+                    <h1 id="info__title">Paginação Funcional</h1>
+                    <h2 id="info__subtitle">Projeto n°62</h2>
+                </div>
+                <a
+                    href="https://youtu.be/kJj8RR3SNTc?si=RhmYAAw1X1OR0ONP"
+                    target="_blank"
+                    class="info__link info__link--youtube"
+                >
+                    <i class="bi bi-youtube"> Youtube</i>
+                </a>
+                <a
+                    href="https://github.com/alagaG/proa-praticando-html/tree/main/projetos/p62"
+                    target="_blank"
+                    class="info__link info__link--github"
+                >
+                    <i class="bi bi-github"> GitHub</i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div class="pagination__container">
+                <button id="pagination__start" class="pagination__button">
+                    <i class="bi bi-skip-start"></i>
+                </button>
+                <button id="pagination__prev" class="pagination__button">
+                    <i class="bi bi-caret-left"></i>
+                </button>
+                <div class="pagination__links">
+                    <a
+                        href="#"
+                        class="pagination__link pagination__link--active"
+                        >1</a
+                    >
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+                </div>
+                <button id="pagination__next" class="pagination__button">
+                    <i class="bi bi-caret-right"></i>
+                </button>
+                <button id="pagination__end" class="pagination__button">
+                    <i class="bi bi-skip-end"></i>
+                </button>
+            </div>
+        </main>
+    </body>
+</html>

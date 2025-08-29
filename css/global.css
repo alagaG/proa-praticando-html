@@ -10,6 +10,11 @@
 
     --color-black: #000;
     --color-white: #f5f5f5;
+    --color-black-light: color-mix(
+        in srgb,
+        var(--color-black) 87.25%,
+        var(--color-white) 12.75%
+    );
     --color-gray-dark: color-mix(
         in srgb,
         var(--color-black) 75%,
@@ -24,6 +29,11 @@
         in srgb,
         var(--color-black) 25%,
         var(--color-white) 75%
+    );
+    --color-white-dark: color-mix(
+        in srgb,
+        var(--color-black) 12.75%,
+        var(--color-white) 87.25%
     );
 
     --color-body: var(--color-white);
