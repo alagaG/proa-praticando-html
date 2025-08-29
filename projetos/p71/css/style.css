@@ -1,0 +1,93 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-body: var(--color-neumorphism-bg);
+
+    --color-calculator-bg: var(--color-neumorphism-bg);
+    --color-calculator-txt: var(--color-gray);
+    --color-calculator-focus-bg: var(--color-body);
+    --color-calculator-focus-txt: #3498db;
+    --size-calculator-gap: 10px;
+    --size-calculator-rounding: 8px;
+    --size-calculator-font: 32px;
+    --size-calculator-key: 64px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-calculator-gap);
+
+    width: min-content;
+    height: fit-content;
+
+    padding: 20px;
+    border-radius: var(--size-calculator-rounding);
+
+    box-shadow: 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        -2px -2px 2px var(--color-neumorphism-shadow-light);
+}
+
+.calculator__display {
+    display: flex;
+    width: 100%;
+}
+
+.calculator__display input {
+    background-color: var(--color-calculator-bg);
+    width: 100%;
+    height: var(--size-calculator-key);
+    padding: 0 20px;
+
+    color: var(--color-calculator-txt);
+    font-size: var(--size-calculator-font);
+    text-align: end;
+
+    border: none;
+    border-radius: var(--size-calculator-rounding);
+
+    box-shadow: inset 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        inset -2px -2px 2px var(--color-neumorphism-shadow-light);
+}
+
+.calculator__keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-calculator-gap);
+}
+
+.calculator__keys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--size-calculator-gap);
+}
+
+.calculator__keys input {
+    background-color: var(--color-calculator-bg);
+    min-width: var(--size-calculator-key);
+    aspect-ratio: 1/1;
+
+    color: var(--color-calculator-txt);
+    font-size: var(--size-calculator-font);
+
+    border: none;
+    border-radius: var(--size-calculator-rounding);
+
+    cursor: pointer;
+    box-shadow: 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        -2px -2px 2px var(--color-neumorphism-shadow-light);
+}
+
+.calculator__keys input:focus {
+    background-color: var(--color-calculator-focus-bg);
+    color: var(--color-calculator-focus-txt);
+    box-shadow: inset 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        inset -3px -3px 2px var(--color-neumorphism-shadow-light);
+}

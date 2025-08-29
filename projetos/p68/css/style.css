@@ -1,9 +1,7 @@
 @import url("../../../css/global.css");
 
 :root {
-    --color-body: #dde1e7;
-    --color-shadow-neumorphism-light: #ffffff73;
-    --color-shadow-neumorphism-dark: rgba(94, 104, 121, 0.288);
+    --color-body: var(--color-neumorphism-bg);
 
     --color-keyboard-bg: var(--color-body);
     --color-keyboard-txt: var(--color-gray);
@@ -27,8 +25,8 @@ main {
 
     padding: 20px;
 
-    box-shadow: 4px 4px 8px 2px var(--color-shadow-neumorphism-dark),
-        -4px -4px 8px 2px var(--color-shadow-neumorphism-light);
+    box-shadow: 4px 4px 8px 2px var(--color-neumorphism-shadow-dark),
+        -4px -4px 8px 2px var(--color-neumorphism-shadow-light);
 
     border-radius: var(--size-keyboard-rounding);
 }
@@ -64,14 +62,14 @@ main {
     border-radius: calc(var(--size-keyboard-rounding) / 3);
     cursor: pointer;
 
-    box-shadow: 3px 3px 7px var(--color-shadow-neumorphism-dark),
-        -2px -2px 2px var(--color-shadow-neumorphism-light);
+    box-shadow: 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        -2px -2px 2px var(--color-neumorphism-shadow-light);
 }
 
 .keyboard__keys input:focus {
     color: var(--color-keyboard-focus-txt);
-    box-shadow: inset 3px 3px 7px var(--color-shadow-neumorphism-dark),
-        inset -3px -3px 2px var(--color-shadow-neumorphism-light);
+    box-shadow: inset 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        inset -3px -3px 2px var(--color-neumorphism-shadow-light);
 }
 
 .keyboard__keys input[value="space"] {

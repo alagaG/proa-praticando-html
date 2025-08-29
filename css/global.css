@@ -35,7 +35,9 @@
         var(--color-black) 12.75%,
         var(--color-white) 87.25%
     );
-
+    --color-neumorphism-bg: #dde1e7;
+    --color-neumorphism-shadow-light: #ffffff73;
+    --color-neumorphism-shadow-dark: rgba(94, 104, 121, 0.288);
     --color-body: var(--color-white);
 
     --color-info-bg: var(--color-white);
