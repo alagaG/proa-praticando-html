@@ -1,0 +1,155 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-info-bg: #00000020;
+    --color-info-txt: #fff;
+}
+
+main {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #00000020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    width: 300px;
+    padding: 35px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+
+    backdrop-filter: blur(8px);
+}
+
+#info {
+    backdrop-filter: blur(8px);
+}
+
+#info__container {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+form h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form__input {
+    position: relative;
+}
+
+.form__input input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+.form__input label {
+    position: absolute;
+
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.form__input input:focus ~ label,
+.form__input input:valid ~ label {
+    top: -50%;
+    left: 0;
+    font-size: 0.8em;
+    transform: translateY(-50%);
+}
+
+.form__options__password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.form__option__rememberme {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form__option__rememberme input {
+    accent-color: #fff;
+}
+
+.form__options__password a {
+    color: #ffffff90;
+    text-decoration: none;
+}
+
+.form__options__password a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+
+    font-size: 1em;
+    font-family: var(--font-family-default);
+    font-weight: 600;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 300;
+    border-color: #ffffff90;
+    cursor: pointer;
+}
+
+.form__options__login {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.form__options__login a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form__options__login a:hover {
+    text-decoration: underline;
+}
