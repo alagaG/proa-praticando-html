@@ -1,0 +1,40 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #4070f4;
+}
+
+main {
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.loader span {
+    background-color: white;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: rotate(calc(var(--dot) / var(--dot-count) * 360deg))
+        translateY(30px);
+    animation: loader__anim 1s infinite;
+    animation-delay: calc(1s / var(--dot-count) * var(--dot));
+}
+
+@keyframes loader__anim {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

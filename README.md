@@ -19,5 +19,6 @@ Este repositorio se refere, inicialmente, a 15 e posteriormente a 91 mini projet
 13. Custom Radio - [Link](https://youtu.be/9UZIv8lyaXA?si=ho4km1J56xLeS-X-)
 14. Navigation Link Hover Tooltip - [Link](https://youtu.be/Gd_G4BFNHkQ?si=hj3bveyAcUCWZ8EA)
 15. Web Push Toast - [Link](https://youtu.be/j8ljv_ps3H8?si=ywwz8qepx_FMOfKu)
+16. Loader - [Link](https://youtu.be/DijlvL2E80s?si=4qyl9i2bqxGo59x4)
 
 CSS nth-child Selector - [Link](https://youtu.be/2curiPwewKI?si=jTXbWnSinhTS3eMn)
