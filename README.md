@@ -22,5 +22,7 @@ Este repositorio se refere, inicialmente, a 15 e posteriormente a 91 mini projet
 16. Loader - [Link](https://youtu.be/DijlvL2E80s?si=4qyl9i2bqxGo59x4)
 17. Design de Cartão - [Link](https://youtu.be/pLwEasHW3_I?si=JCjb-C3rDy6O2hG6)
 18. Design de Cartão Giratório - [Link](https://youtu.be/20Qb7pNMv-4?si=uVF4IOsbX24ltQnx)
+19. Botão com Borda Animada - [Link](https://youtu.be/3LzD2OoDcOA?si=hGInKSnpdIxJqJC9)
+20. Texto com Gradiente - [Link](https://youtu.be/4vgD6yhnNOI?si=DgGJ_d6XCE_8Bv4a)
 
 CSS nth-child Selector - [Link](https://youtu.be/2curiPwewKI?si=jTXbWnSinhTS3eMn)

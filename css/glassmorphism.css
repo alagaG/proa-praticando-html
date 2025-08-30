@@ -29,7 +29,7 @@
     border-left: 1px solid var(--glassmorphism-border);
     border-right: 1px solid var(--glassmorphism-border);
 
-    backdrop-filter: var(--glassmorphism-blur);
+    backdrop-filter: blur(var(--glassmorphism-blur));
     box-shadow: 0 8px 8px var(--glassmorphism-shadow);
 }
 

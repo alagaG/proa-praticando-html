@@ -1,0 +1,72 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-pink: #ff676d;
+
+    --color-body: var(--color-pink);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox {
+    position: relative;
+    background-color: var(--color-pink);
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px #00000020;
+}
+
+.searchbox__input {
+    width: 330px;
+    height: 100%;
+    padding: 0 10px;
+
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.searchbox__check:checked ~ .searchbox__input {
+    width: 59px;
+    height: 59px;
+    padding: 0;
+    transform: scale(0.9);
+}
+
+.searchbox__check {
+    display: none;
+}
+
+.searchbox__label {
+    background-color: var(--color-pink);
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+
+    color: var(--color-white);
+    border-radius: 50%;
+
+    cursor: pointer;
+    box-shadow: 0 5px 10px #00000010;
+    transition: 0.5s ease;
+}
+
+.searchbox__check:checked ~ .searchbox__label {
+    background-color: var(--color-white);
+    color: var(--color-pink);
+}
+
+.searchbox__label i {
+    display: block;
+    width: 100%;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+}
