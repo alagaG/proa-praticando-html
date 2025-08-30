@@ -10,7 +10,12 @@ main {
 h1 {
     font-size: 28px;
     font-weight: 650;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
 }
 
 ol {
@@ -33,6 +38,28 @@ ol {
     box-shadow: 0 4px 16px 1px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 800px) {
+    main {
+        height: fit-content;
+        justify-content: start;
+        padding: 50px 0 100px;
+    }
+
+    #projects {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+ol.projects__column > li {
+    margin: 0;
+    transition: 0.5s ease;
+}
+
+ol.projects__column > li:hover {
+    margin: 0 0 12px 0;
+}
+
 .projects__column a {
     color: var(--color-black);
     text-decoration: none;
@@ -41,13 +68,15 @@ ol {
 ol.projects__column > li a {
     border: 1px solid transparent;
     padding: 2px 8px;
+    white-space: nowrap;
     transition: all 0.2s ease-in-out;
 }
 
 ol.projects__column > li a:hover {
+    background-color: var(--color-white);
     box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1);
     border-color: var(--color-gray-light);
     border-radius: 5px;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+    padding: 5px 8px;
+    text-underline-offset: 3px;
 }

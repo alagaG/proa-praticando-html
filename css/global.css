@@ -39,6 +39,7 @@
     --color-neumorphism-shadow-light: #ffffff73;
     --color-neumorphism-shadow-dark: rgba(94, 104, 121, 0.288);
     --color-body: var(--color-white);
+    --color-body-gradient: transparent;
 
     --color-info-bg: var(--color-white);
     --color-info-txt: #000000;
@@ -56,6 +57,7 @@ html {
 }
 
 body {
+    background: var(--color-body-gradient);
     background-color: var(--color-body);
 }
 

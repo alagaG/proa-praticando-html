@@ -1,0 +1,66 @@
+@import url("../../../css/global.css");
+@import url("../../../css/neumorphism.css");
+
+:root {
+    --color-icons-facebook: #4267b2;
+    --color-icons-twitter: #1da1f2;
+    --color-icons-instagram: #e1306c;
+    --color-icons-github: #333;
+    --color-icons-youtube: #f00;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    aspect-ratio: 1;
+    font-size: 32px;
+    border-radius: 50%;
+}
+
+.icon:hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    box-shadow: inset 3px 3px 7px var(--color-neumorphism-shadow-dark),
+        inset -3px -3px 2px var(--color-neumorphism-shadow-light);
+}
+
+.icon i {
+    z-index: 10;
+    transition: 0.2s ease;
+}
+
+.icon:hover i {
+    transform: scale(0.85);
+}
+
+.icon:nth-child(1) {
+    color: var(--color-icons-facebook);
+}
+.icon:nth-child(2) {
+    color: var(--color-icons-twitter);
+}
+.icon:nth-child(3) {
+    color: var(--color-icons-instagram);
+}
+.icon:nth-child(4) {
+    color: var(--color-icons-github);
+}
+.icon:nth-child(5) {
+    color: var(--color-icons-youtube);
+}

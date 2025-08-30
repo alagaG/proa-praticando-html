@@ -1,0 +1,49 @@
+:root {
+    --color-neumorphism-bg: #dde1e7;
+    --color-neumorphism-shadow-light: #ffffff73;
+    --color-neumorphism-shadow-dark: rgba(94, 104, 121, 0.288);
+
+    --color-body: var(--color-neumorphism-bg);
+}
+
+#info__container {
+    background-color: var(--color-neumorphism-bg);
+    border: none;
+    box-shadow: 4px 4px 7px var(--color-neumorphism-shadow-dark),
+        -3px -3px 7px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism {
+    background-color: var(--color-neumorphism-bg);
+    border: none;
+}
+
+.neumorphism--lg {
+    box-shadow: 5px 5px 6px var(--color-neumorphism-shadow-dark),
+        -4px -4px 8px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism--md {
+    box-shadow: 4px 4px 5px var(--color-neumorphism-shadow-dark),
+        -3px -3px 7px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism--sm {
+    box-shadow: 3px 3px 5px var(--color-neumorphism-shadow-dark),
+        -2px -2px 6px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism__inner--lg {
+    box-shadow: inset 5px 5px 6px var(--color-neumorphism-shadow-dark),
+        inset -4px -4px 8px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism__inner--md {
+    box-shadow: inset 4px 4px 5px var(--color-neumorphism-shadow-dark),
+        inset -3px -3px 7px var(--color-neumorphism-shadow-light);
+}
+
+.neumorphism__inner--sm {
+    box-shadow: inset 3px 3px 5px var(--color-neumorphism-shadow-dark),
+        inset -2px -2px 6px var(--color-neumorphism-shadow-light);
+}

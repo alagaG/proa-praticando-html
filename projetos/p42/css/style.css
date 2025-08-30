@@ -1,0 +1,96 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-purple-light: #d5bbf7;
+    --color-purple-dark: #8e49e8;
+    --color-body-top: #68eacc;
+    --color-body-bottom: #497be8;
+
+    --color-body-gradient: linear-gradient(
+        to bottom,
+        var(--color-body-top),
+        var(--color-body-bottom)
+    );
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--color-white);
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #00000020;
+}
+
+.card input[name="course-option"] {
+    display: none;
+}
+
+.card__title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.card__option {
+    background-color: var(--color-white-dark);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    border: 3px solid transparent;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+#option-1:checked ~ .card__content .card__option:nth-child(1),
+#option-2:checked ~ .card__content .card__option:nth-child(2),
+#option-3:checked ~ .card__content .card__option:nth-child(3),
+.card__option:hover {
+    border-color: var(--color-purple-dark);
+}
+
+.card__option__radio {
+    background-color: var(--color-gray-light);
+    width: 30px;
+    aspect-ratio: 1;
+    margin-right: 12px;
+
+    border-radius: 50%;
+    border: 5px solid transparent;
+
+    box-sizing: border-box;
+    box-shadow: inset -2px -2px 4px #00000020, inset 1px 1px 1px #ffffff50;
+    transition: 0.2s ease;
+}
+
+#option-1:checked
+    ~ .card__content
+    .card__option:nth-child(1)
+    .card__option__radio,
+#option-2:checked
+    ~ .card__content
+    .card__option:nth-child(2)
+    .card__option__radio,
+#option-3:checked
+    ~ .card__content
+    .card__option:nth-child(3)
+    .card__option__radio {
+    border-color: var(--color-purple-dark);
+}
+
+.card__option__title {
+    width: 100%;
+}
