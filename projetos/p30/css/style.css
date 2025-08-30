@@ -1,0 +1,36 @@
+@import url("../../../css/global.css");
+
+:root {
+    --gradient-text: linear-gradient(
+        135deg,
+        #5335cf,
+        #de005e,
+        #f66e48,
+        #de005e,
+        #5335cf
+    );
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--raimbow {
+    background: var(--gradient-text);
+    background-size: 400%;
+    background-clip: text;
+
+    color: transparent;
+    font-size: 100px;
+    font-weight: 600;
+
+    animation: text__animation--raimbow 10s ease infinite;
+}
+
+@keyframes text__animation--raimbow {
+    100% {
+        background-position: 400%;
+    }
+}
