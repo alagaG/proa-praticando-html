@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Um projeto de estudo de HTML e CSS, no caso, uma notificação de push toast"
+        />
+        <meta name="author" content="Matheus de Oliveira Caldas" />
+        <meta name="keywords" content="HTML, CSS, Estudo, Toast, Notificação" />
+        <meta name="robots" content="index, follow" />
+        <title>Projeto 36 - Notificação de Push Toast</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <aside id="info">
+            <div id="info__container">
+                <a href="../../index.html" class="info__link info__link--back">
+                    <i class="bi bi-arrow-left"> Voltar</i>
+                </a>
+                <div id="info__header">
+                    <h1 id="info__title">Notificação de Push Toast</h1>
+                    <h2 id="info__subtitle">Projeto n°36</h2>
+                </div>
+                <a
+                    href="https://youtu.be/j8ljv_ps3H8?si=MIfbHwWmU4vDWfFM"
+                    target="_blank"
+                    class="info__link info__link--youtube"
+                >
+                    <i class="bi bi-youtube"> Youtube</i>
+                </a>
+                <a
+                    href="https://github.com/alagaG/proa-praticando-html/tree/main/projetos/p36"
+                    target="_blank"
+                    class="info__link info__link--github"
+                >
+                    <i class="bi bi-github"> GitHub</i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div class="container">
+                <input
+                    type="radio"
+                    name="toast"
+                    id="toast__radio"
+                    class="toast__radio"
+                />
+                <div class="toast">
+                    <label for="toast__radio" class="toast__close">
+                        <i class="bi bi-x"></i>
+                    </label>
+                    <div class="toast__content">
+                        <div class="toast__logo">
+                            <img
+                                src="img/profile.jpg"
+                                alt="Foto de perfil do canal do youtube alanzoka"
+                            />
+                        </div>
+                        <div class="toast__text">
+                            <div>
+                                <h3 class="toast__title">Alanzoka</h3>
+                                <p class="toast__subtitle">
+                                    Se inscreva no canal de Next Age
+                                </p>
+                            </div>
+                            <a
+                                href="https://www.youtube.com/@alanzoka?sub_confirmation=1"
+                                class="toast__link"
+                                >Se Inscrever</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
