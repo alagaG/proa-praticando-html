@@ -1,0 +1,67 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-purple: #6d50e2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 550px;
+    padding: 30px;
+    margin: 20px;
+
+    text-align: justify;
+    line-height: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #00000020;
+}
+
+.tooltiped a {
+    color: var(--color-purple);
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltiped a:hover {
+    text-decoration: underline;
+}
+
+.tooltiped a span {
+    background-color: var(--color-purple);
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    padding: 8px 10px;
+
+    color: var(--color-white);
+    white-space: nowrap;
+    border-radius: 20px;
+
+    pointer-events: none;
+    transform: translate(-50%, 0) scale(0);
+    transition: 0.3s ease;
+}
+
+.tooltiped a:hover span {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.tooltiped a span::before {
+    background-color: var(--color-purple);
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.5s ease;
+}
