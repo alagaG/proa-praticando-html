@@ -21,5 +21,6 @@ Este repositorio se refere, inicialmente, a 15 e posteriormente a 91 mini projet
 15. Web Push Toast - [Link](https://youtu.be/j8ljv_ps3H8?si=ywwz8qepx_FMOfKu)
 16. Loader - [Link](https://youtu.be/DijlvL2E80s?si=4qyl9i2bqxGo59x4)
 17. Design de Cartão - [Link](https://youtu.be/pLwEasHW3_I?si=JCjb-C3rDy6O2hG6)
+18. Design de Cartão Giratório - [Link](https://youtu.be/20Qb7pNMv-4?si=uVF4IOsbX24ltQnx)
 
 CSS nth-child Selector - [Link](https://youtu.be/2curiPwewKI?si=jTXbWnSinhTS3eMn)

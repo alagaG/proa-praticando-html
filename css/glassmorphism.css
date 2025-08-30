@@ -1,0 +1,81 @@
+:root {
+    --color-glassmorphism-bg-light: #00000020;
+    --color-glassmorphism-bg-dark: #ffffff20;
+    --color-glassmorphism-txt-light: #000;
+    --color-glassmorphism-txt-dark: #fff;
+    --color-glassmorphism-shadow-light: #00000020;
+    --color-glassmorphism-shadow-dark: #aaaaaa10;
+    --color-glassmorphism-border-light: #00000020;
+    --color-glassmorphism-border-dark: #ffffff20;
+
+    --size-glasmorphism-blur-xl: 12px;
+    --size-glasmorphism-blur-lg: 10px;
+    --size-glasmorphism-blur-md: 8px;
+    --size-glasmorphism-blur-sm: 6px;
+    --size-glasmorphism-blur-xs: 4px;
+}
+
+.glassmorphism {
+    --glassmorphism-bg: var(--color-glassmorphism-bg-light);
+    --glassmorphism-txt: var(--color-glassmorphism-txt-light);
+    --glassmorphism-shadow: var(--color-glassmorphism-shadow-light);
+    --glassmorphism-blur: var(--size-glasmorphism-blur-md);
+    --glassmorphism-border: var(--color-glassmorphism-border-light);
+
+    background-color: var(--glassmorphism-bg);
+    color: var(--glassmorphism-txt);
+
+    border-bottom: 2px solid var(--glassmorphism-border);
+    border-left: 1px solid var(--glassmorphism-border);
+    border-right: 1px solid var(--glassmorphism-border);
+
+    backdrop-filter: var(--glassmorphism-blur);
+    box-shadow: 0 8px 8px var(--glassmorphism-shadow);
+}
+
+.glassmorphism--dark {
+    --glassmorphism-bg: var(--color-glassmorphism-bg-dark);
+    --glassmorphism-txt: var(--color-glassmorphism-txt-dark);
+    --glassmorphism-shadow: var(--color-glassmorphism-shadow-dark);
+    --glassmorphism-border: var(--color-glassmorphism-border-dark);
+}
+
+.glassmorphism__txt--light {
+    --glassmorphism-txt: var(--color-glassmorphism-txt-light);
+}
+
+.glassmorphism__txt--dark {
+    --glassmorphism-txt: var(--color-glassmorphism-txt-dark);
+}
+
+.glassmorphism__shadow--light {
+    --glassmorphism-shadow: var(--color-glassmorphism-shadow-light);
+}
+
+.glassmorphism__shadow--dark {
+    --glassmorphism-shadow: var(--color-glassmorphism-shadow-dark);
+}
+
+.glassmorphism__border--light {
+    --glassmorphism-border: var(--color-glassmorphism-border-light);
+}
+
+.glassmorphism__border--dark {
+    --glassmorphism-border: var(--color-glassmorphism-border-dark);
+}
+
+.glassmorphism__blur--xl {
+    --glassmorphism-blur: var(--size-glasmorphism-blur-xl);
+}
+
+.glassmorphism__blur--lg {
+    --glassmorphism-blur: var(--size-glasmorphism-blur-lg);
+}
+
+.glassmorphism__blur--sm {
+    --glassmorphism-blur: var(--size-glasmorphism-blur-sm);
+}
+
+.glassmorphism__blur--xs {
+    --glassmorphism-blur: var(--size-glasmorphism-blur-xs);
+}
