@@ -14,8 +14,10 @@ main {
 .loader {
     position: relative;
     display: flex;
-    width: 100px;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
 }
 
 .loader span {
