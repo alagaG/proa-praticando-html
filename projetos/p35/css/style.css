@@ -1,0 +1,153 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #0984e3;
+    --color-icon-facebook: #426782;
+    --color-icon-twitter: #1da1f2;
+    --color-icon-instagram: #e1306c;
+    --color-icon-youtube: #f00;
+}
+
+main {
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #00000050;
+}
+
+.share {
+    position: relative;
+}
+
+.share__controller {
+    display: none;
+}
+
+.share__button {
+    position: relative;
+    background-color: var(--color-blue);
+    display: block;
+    width: 180px;
+    height: 50px;
+
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+
+    border: 2px solid var(--color-blue);
+    border-radius: 40px;
+    box-shadow: 0 0 5px #00000050;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.share__button::after {
+    background-color: var(--color-white);
+    position: absolute;
+    content: "Cancelar";
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--color-blue);
+
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+
+.share__button:hover {
+    letter-spacing: 1px;
+}
+
+.share__controller:checked ~ .share__button::after {
+    opacity: 1;
+}
+
+.share__tooltip {
+    background-color: var(--color-white);
+    position: absolute;
+    top: calc(-100% - 20px);
+    left: 50%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    opacity: 0;
+    width: 120%;
+    height: 100%;
+
+    border-radius: 100px;
+    box-shadow: 0 0px 5px #00000050;
+
+    transform: translate(-50%, -100%);
+    transition: 0.3s ease;
+}
+
+.share__controller:checked ~ .share__tooltip {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.share__tooltip::before {
+    background-color: var(--color-white);
+    content: "";
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    border-right: 2px solid #00000010;
+    border-bottom: 2px solid #00000010;
+}
+
+.share__tooltip a {
+    color: var(--color-blue);
+    font-size: 24px;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.share__controller:checked ~ .share__tooltip a {
+    pointer-events: all;
+}
+
+.share__tooltip a:hover {
+    transform: translateY(-2px);
+}
+
+.share__tooltip a:nth-child(1):hover {
+    color: var(--color-icon-facebook);
+}
+
+.share__tooltip a:nth-child(2):hover {
+    color: var(--color-icon-twitter);
+}
+
+.share__tooltip a:nth-child(3):hover {
+    color: var(--color-icon-instagram);
+}
+
+.share__tooltip a:nth-child(4):hover {
+    color: var(--color-icon-youtube);
+}
