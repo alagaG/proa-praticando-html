@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Um projeto de estudo de HTML e CSS, no caso, um formulário de login e cadastro"
+        />
+        <meta name="author" content="Matheus de Oliveira Caldas" />
+        <meta
+            name="keywords"
+            content="HTML, CSS, Estudo, Formulário, Login, Cadastro"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Projeto 49 - Formulário de Login e Cadastro</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <aside id="info">
+            <div id="info__container">
+                <a href="../../index.html" class="info__link info__link--back">
+                    <i class="bi bi-arrow-left"> Voltar</i>
+                </a>
+                <div id="info__header">
+                    <h1 id="info__title">Formulário de Login e Cadastro</h1>
+                    <h2 id="info__subtitle">Projeto n°49</h2>
+                </div>
+                <a
+                    href="https://youtu.be/hFDCLZbTLys?si=c1g89rebqNOaQme_"
+                    target="_blank"
+                    class="info__link info__link--youtube"
+                >
+                    <i class="bi bi-youtube"> Youtube</i>
+                </a>
+                <a
+                    href="https://github.com/alagaG/proa-praticando-html/tree/main/projetos/p49"
+                    target="_blank"
+                    class="info__link info__link--github"
+                >
+                    <i class="bi bi-github"> GitHub</i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div class="container">
+                <input type="checkbox" name="controller" id="controller" />
+                <form action="#" class="login login--signin">
+                    <header>Entrar</header>
+                    <input type="text" placeholder="Digite seu email" />
+                    <input type="password" placeholder="Digite sua senha" />
+                    <a href="">Esqueci minha senha</a>
+                    <input type="button" value="Entrar" />
+                    <div>
+                        <span>
+                            Não possui uma conta?
+                            <label for="controller">Cadastre-se</label>
+                        </span>
+                    </div>
+                </form>
+                <form action="#" class="login login--signup">
+                    <header>Cadastrar-se</header>
+                    <input type="text" placeholder="Digite seu email" />
+                    <input type="password" placeholder="Digite sua senha" />
+                    <input type="password" placeholder="Confirme sua senha" />
+                    <input type="button" value="Cadastrar" />
+                    <div>
+                        <span>
+                            Já possui uma conta?
+                            <label for="controller">Fazer login</label>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

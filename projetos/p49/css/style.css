@@ -1,0 +1,124 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-green-light: #009579;
+    --color-green-dark: #006653;
+
+    --color-body: var(--color-green-light);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-white);
+    max-width: 350px;
+    width: 100%;
+    height: fit-content;
+
+    padding: 20px 30px;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#controller {
+    display: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.login--signup {
+    display: none;
+}
+
+#controller:checked ~ .login--signup {
+    display: flex;
+}
+
+#controller:checked ~ .login--signin {
+    display: none;
+}
+
+.login header {
+    margin-bottom: 30px;
+
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login input {
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    color: var(--color-gray);
+    font-size: 18px;
+
+    border: 1px solid var(--color-white-dark);
+    border-radius: 4px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.login input:focus {
+    box-shadow: 0 2px 2px #00000050;
+}
+
+.login a {
+    color: var(--color-green-light);
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.login a:hover {
+    width: fit-content;
+    color: var(--color-green-dark);
+    text-decoration: underline;
+}
+
+.login input[type="button"] {
+    background-color: var(--color-green-light);
+    color: var(--color-white);
+    margin-top: 36px;
+    cursor: pointer;
+}
+
+.login input[type="button"]:hover {
+    background-color: var(--color-green-dark);
+}
+
+.login div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login div span {
+    color: var(--color-gray);
+    font-size: 14px;
+    text-align: center;
+}
+
+.login div span label {
+    color: var(--color-green-light);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login div span label:hover {
+    color: var(--color-green-dark);
+    text-decoration: underline;
+}
