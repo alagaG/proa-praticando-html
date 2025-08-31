@@ -1,0 +1,57 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #008ae6;
+    --color-red: #e60000;
+    --color-yellow: #ffcc00;
+    --color-green: #008800;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: flex;
+    gap: 30px;
+}
+
+.loader__ball {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background-color: purple;
+    box-shadow: 0 5px 10px #00000020;
+    animation: loader__anim 0.75s infinite ease-in-out alternate;
+}
+
+@keyframes loader__anim {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.loader__ball:nth-child(1) {
+    background-color: var(--color-blue);
+    animation-delay: -0.25s;
+}
+
+.loader__ball:nth-child(2) {
+    background-color: var(--color-yellow);
+    animation-delay: -0.5s;
+}
+.loader__ball:nth-child(3) {
+    background-color: var(--color-green);
+    animation-delay: -0.75s;
+}
+.loader__ball:nth-child(4) {
+    background-color: var(--color-red);
+    animation-delay: -1s;
+}
