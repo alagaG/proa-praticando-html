@@ -1,0 +1,30 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #4285f4;
+
+    --color-body: var(--color-blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+
+    border: 6px solid var(--color-white);
+    border-top-color: transparent;
+    border-radius: 50%;
+
+    animation: spin 0.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
