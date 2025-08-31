@@ -1,0 +1,55 @@
+@import url("../../../css/global.css");
+@import url("../../../css/neumorphism.css");
+
+:root {
+    --color-blue: #5c89ff;
+}
+
+main {
+    display: grid;
+    place-content: center;
+}
+
+.spinner {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.spinner::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: -3px -3px 8px #fff, 3px 3px 8px #00000020;
+}
+
+.spinner__ball {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+
+    animation: spinner__ball__spin 1s infinite linear;
+}
+
+@keyframes spinner__ball__spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner__ball::after {
+    position: absolute;
+    background-color: var(--color-blue);
+
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
