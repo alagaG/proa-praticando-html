@@ -1,0 +1,92 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #4070f4;
+
+    --color-body: var(--color-blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    position: relative;
+    background-color: var(--color-white);
+
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    height: 60px;
+    margin: 0 40px;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000050;
+}
+
+.searchbar > input {
+    width: 100%;
+    height: 100%;
+
+    color: var(--color-gray-dark);
+    font-size: 20px;
+    padding: 0 120px 0 52px;
+
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.searchbar > i,
+.searchbar > button {
+    position: absolute;
+}
+
+.searchbar > i {
+    left: 12px;
+    color: var(--color-gray);
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.searchbar > button {
+    background-color: var(--color-blue);
+    right: 10px;
+    width: 100px;
+    height: calc(100% - 20px);
+    margin: 10px 0;
+
+    color: var(--color-white);
+    font-size: 16px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.searchbar > button.searchbar__action {
+    transform: scale(0.9);
+}
+
+@media (max-width: 500px) {
+    .searchbar {
+        height: 50px;
+    }
+
+    .searchbar > input {
+        font-size: 14px;
+    }
+
+    .searchbar > i {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .searchbar > button {
+        font-size: 14px;
+    }
+}
