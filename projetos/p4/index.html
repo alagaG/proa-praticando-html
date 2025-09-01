@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Um projeto de estudo de HTML e CSS, no caso, uma barra lateral"
+        />
+        <meta name="author" content="Matheus de Oliveira Caldas" />
+        <meta
+            name="keywords"
+            content="HTML, CSS, Estudo, Glassmorphism, Barra Lateral"
+        />
+        <meta name="robots" content="index, follow" />
+        <title>Projeto 4 - Barra Lateral</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <aside id="info">
+            <div id="info__container">
+                <a href="../../index.html" class="info__link info__link--back">
+                    <i class="bi bi-arrow-left"> Voltar</i>
+                </a>
+                <div id="info__header">
+                    <h1 id="info__title">Barra Lateral</h1>
+                    <h2 id="info__subtitle">Projeto n°4</h2>
+                </div>
+                <a
+                    href="https://youtu.be/5EVKDhGvxB4?si=6C__Cj4ZF4mU3_zn"
+                    target="_blank"
+                    class="info__link info__link--youtube"
+                >
+                    <i class="bi bi-youtube"> Youtube</i>
+                </a>
+                <a
+                    href="https://github.com/alagaG/proa-praticando-html/tree/main/projetos/p4"
+                    target="_blank"
+                    class="info__link info__link--github"
+                >
+                    <i class="bi bi-github"> GitHub</i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div class="sidebar">
+                <input
+                    type="checkbox"
+                    name="sidebar__controller"
+                    id="sidebar__controller"
+                />
+                <label class="sidebar__actor__open" for="sidebar__controller">
+                    <i class="bx bx-menu"></i>
+                </label>
+                <div class="sidebar__menu glassmorphism">
+                    <label
+                        class="sidebar__actor__close"
+                        for="sidebar__controller"
+                    >
+                        <i class="bx bx-x"></i>
+                    </label>
+                    <div class="sidebar__header">
+                        <h6>Menu</h6>
+                    </div>
+                    <div class="sidebar__links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxs-dashboard"></i>Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-link"></i>Atalhos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxs-grid"></i>Visão Geral
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="bx bx-calendar"></i>Eventos</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-question-mark"></i>Sobre
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-slider"></i>Serviços
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-phone"></i>Contato
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-conversation"></i>Feedback
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__footer">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
