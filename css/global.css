@@ -14,6 +14,28 @@
     --color-midia-github: #333;
     --color-midia-youtube: #f00;
 
+    /* Colors found at: https://flatuicolors.com/palette/defo */
+    --color-flatui-red-light: #e74c3c;
+    --color-flatui-red-dark: #c0392b;
+    --color-flatui-orange-light: #e67e22;
+    --color-flatui-orange-dark: #d35400;
+    --color-flatui-yellow-light: #f1c40f;
+    --color-flatui-yellow-dark: #f39c12;
+    --color-flatui-green-light: #2ecc71;
+    --color-flatui-green-dark: #27ae60;
+    --color-flatui-cyan-light: #1abc9c;
+    --color-flatui-cyan-dark: #16a085;
+    --color-flatui-blue-light: #3498db;
+    --color-flatui-blue-dark: #2980b9;
+    --color-flatui-purple-light: #9b59b6;
+    --color-flatui-purple-dark: #8e44ad;
+    --color-flatui-black-light: #34495e;
+    --color-flatui-black-dark: #2c3e50;
+    --color-flatui-gray-light: #95a5a6;
+    --color-flatui-gray-dark: #7f8c8d;
+    --color-flatui-white-light: #ecf0f1;
+    --color-flatui-white-dark: #bdc3c7;
+
     --color-black: #000;
     --color-white: #f5f5f5;
     --color-black-light: color-mix(

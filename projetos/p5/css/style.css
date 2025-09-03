@@ -1,0 +1,141 @@
+@import url("../../../css/global.css");
+@import url("../../../css/boxicons.css");
+
+:root {
+    --color-body: var(--color-flatui-green-light);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__container {
+    background-color: var(--color-flatui-white-light);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000030;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h1 {
+    background-color: var(--color-flatui-green-dark);
+    width: 100%;
+    padding: 20px;
+
+    color: var(--color-flatui-white-light);
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+}
+
+.form a {
+    color: var(--color-flatui-green-dark);
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form__row {
+    position: relative;
+    width: 100%;
+    height: 60px;
+
+    margin-top: 24px;
+    padding: 0 20px 0;
+    box-sizing: border-box;
+}
+
+.form__row input {
+    background-color: var(--color-flatui-white-light);
+    width: 100%;
+    height: 100%;
+
+    padding: 0 20px 0 80px;
+
+    font-size: 18px;
+
+    border: 2px solid var(--color-flatui-green-dark);
+    border-radius: 8px;
+    outline: 0;
+
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.form__row input:focus {
+    box-shadow: inset 0 0 0px 3px #27ae6030, 0 3px 3px #00000030;
+}
+
+.form__row i {
+    background-color: var(--color-flatui-green-dark);
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    width: 60px;
+    height: 100%;
+
+    color: var(--color-flatui-white-light);
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.form__forget {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+.form__button {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.form__button button {
+    background-color: var(--color-flatui-green-dark);
+    width: 100%;
+    height: 100%;
+
+    color: var(--color-flatui-white-light);
+    font-size: 24px;
+    text-align: center;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.form__button button:hover {
+    background-color: var(--color-flatui-white-light);
+    color: var(--color-flatui-green-dark);
+    border: 2px solid var(--color-flatui-green-dark);
+}
+
+.form__register {
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
