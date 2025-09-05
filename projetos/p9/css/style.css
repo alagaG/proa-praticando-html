@@ -1,0 +1,143 @@
+@import url("../../../css/global.css");
+
+:root {
+    --color-blue: #4158d0;
+    --gradient: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000050;
+}
+
+.container__header {
+    background: var(--gradient);
+    padding: 24px;
+
+    color: var(--color-white);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 50px 30px;
+}
+
+.form__input {
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.form__input input {
+    padding: 0 16px;
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--font-family-default);
+    font-size: 18px;
+    outline: none;
+
+    border: 1px solid var(--color-white-dark);
+    border-radius: 500px;
+    transition: 0.3s ease;
+}
+
+.form__input input:focus {
+    border-color: #000;
+}
+
+.form__input input:valid ~ label,
+.form__input input:focus ~ label {
+    top: 0;
+    color: var(--color-blue);
+}
+
+.form__input label {
+    background-color: #fff;
+    position: absolute;
+    content: "hi";
+    left: 16px;
+    top: 50%;
+    padding: 0 4px;
+
+    transition: 0.3s ease;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.form__options__remember {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.form__options__remember label {
+    cursor: pointer;
+}
+
+.form__options a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.form__options a:hover {
+    text-decoration: underline;
+}
+
+.form__submit {
+    background: var(--gradient);
+    height: 50px;
+    margin-top: 24px;
+
+    color: #fff;
+    font-family: var(--font-family-default);
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+
+    border: none;
+    border-radius: 500px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form__submit:active {
+    transform: scale(0.95);
+}
+
+.form__register {
+    margin-top: 40px;
+}
+
+.form__register a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.form__register a:hover {
+    text-decoration: underline;
+}
