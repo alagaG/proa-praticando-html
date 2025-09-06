@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Um projeto de estudo de HTML e CSS, no caso, alguma abas"
+        />
+        <meta name="author" content="Matheus de Oliveira Caldas" />
+        <meta name="keywords" content="HTML, CSS, Estudo, Abas" />
+        <meta name="robots" content="index, follow" />
+        <title>Projeto 10 - Abas</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <aside id="info">
+            <div id="info__container">
+                <a href="../../index.html" class="info__link info__link--back">
+                    <i class="bi bi-arrow-left"> Voltar</i>
+                </a>
+                <div id="info__header">
+                    <h1 id="info__title">Abas</h1>
+                    <h2 id="info__subtitle">Projeto n°10</h2>
+                </div>
+                <a
+                    href="https://youtu.be/DTtPuBcuYF8?si=NxYFsGyhU1CfTAOJ"
+                    target="_blank"
+                    class="info__link info__link--youtube"
+                >
+                    <i class="bi bi-youtube"> Youtube</i>
+                </a>
+                <a
+                    href="https://github.com/alagaG/proa-praticando-html/tree/main/projetos/p10"
+                    target="_blank"
+                    class="info__link info__link--github"
+                >
+                    <i class="bi bi-github"> GitHub</i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div class="container">
+                <h1 class="title">Abas Verticais em CSS</h1>
+                <div class="content">
+                    <input
+                        checked
+                        type="radio"
+                        name="tab"
+                        id="tab-home-controller"
+                        class="tabs__controller"
+                    />
+                    <input
+                        type="radio"
+                        name="tab"
+                        id="tab-blog-controller"
+                        class="tabs__controller"
+                    />
+                    <input
+                        type="radio"
+                        name="tab"
+                        id="tab-help-controller"
+                        class="tabs__controller"
+                    />
+                    <input
+                        type="radio"
+                        name="tab"
+                        id="tab-code-controller"
+                        class="tabs__controller"
+                    />
+                    <input
+                        type="radio"
+                        name="tab"
+                        id="tab-about-controller"
+                        class="tabs__controller"
+                    />
+                    <div class="tabs">
+                        <span class="tabs__selection"></span>
+                        <label for="tab-home-controller" class="tabs__item">
+                            <i class="material-symbols-outlined">home</i>
+                            <span>Início</span>
+                        </label>
+                        <label for="tab-blog-controller" class="tabs__item">
+                            <i class="material-symbols-outlined">rss_feed</i>
+                            <span>Blog</span>
+                        </label>
+                        <label for="tab-help-controller" class="tabs__item">
+                            <i class="material-symbols-outlined">mail</i>
+                            <span>Ajuda</span>
+                        </label>
+                        <label for="tab-code-controller" class="tabs__item">
+                            <i class="material-symbols-outlined">code</i>
+                            <span>Código</span>
+                        </label>
+                        <label for="tab-about-controller" class="tabs__item">
+                            <i class="material-symbols-outlined">person</i>
+                            <span>Sobre</span>
+                        </label>
+                        <span class="tab__selection"></span>
+                    </div>
+                    <div class="tab__viewer">
+                        <div id="tab-home-content" class="tab__content">
+                            <h2>Início</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Excepturi velit facilis
+                                tempora repellendus hic asperiores odio eum
+                                consectetur quasi atque, provident eius nobis
+                                animi laboriosam dolorum quibusdam illo est
+                                pariatur nemo possimus minus molestias
+                                consequuntur a! Voluptas totam voluptatem facere
+                                pariatur natus aspernatur explicabo
+                                reprehenderit neque, accusamus, mollitia
+                                cupiditate enim odit! Quis facilis, dolor
+                                molestiae pariatur ullam error. Minima earum
+                                iusto sint nostrum. Rem, ea reprehenderit sed
+                                praesentium sapiente amet? Reiciendis, velit.
+                                Vel voluptatum deserunt ab voluptates voluptatem
+                                repellendus totam? Soluta natus molestiae
+                                perspiciatis autem sunt fugit magnam at
+                                assumenda!
+                            </p>
+                        </div>
+                        <div id="tab-blog-content" class="tab__content">
+                            <h2>Blog</h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Ea et excepturi eveniet
+                                recusandae in, dolorum nesciunt aspernatur
+                                praesentium labore nostrum, ex sequi similique
+                                ad qui exercitationem deleniti deserunt sunt
+                                consequuntur, totam minus molestiae. Earum eos
+                                natus vero, explicabo est corrupti mollitia
+                                ipsum labore voluptates debitis beatae, fugiat
+                                ad, cum magnam!
+                            </p>
+                        </div>
+                        <div id="tab-help-content" class="tab__content">
+                            <h2>Ajuda</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi doloremque quos
+                                doloribus at voluptates tempore deserunt ab
+                                quasi cum! Error qui nemo animi minus quidem,
+                                maiores earum nostrum at nisi ipsum vero
+                                facilis, aliquid dicta nam consequatur impedit
+                                officia porro? Omnis, voluptas officiis.
+                                Dignissimos laboriosam magnam aperiam est dolore
+                                ad nihil porro fuga, rerum labore facere
+                                blanditiis quasi! Repellat impedit, inventore ab
+                                ipsam ducimus fugiat.
+                            </p>
+                        </div>
+                        <div id="tab-code-content" class="tab__content">
+                            <h2>Blog</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Natus voluptatibus, iure nobis
+                                eos hic quos totam libero illum doloribus magni
+                                error earum beatae, maiores voluptatum cumque
+                                consequatur quo ab quia omnis provident
+                                incidunt? Odit veritatis provident voluptatibus
+                                omnis excepturi officiis nulla repellendus,
+                                saepe, obcaecati distinctio repudiandae commodi.
+                                Mollitia incidunt officiis atque! Voluptatibus
+                                quaerat reprehenderit quo nesciunt cumque
+                                aspernatur sunt nostrum a id. Porro illum est
+                                maiores ab consequatur delectus aliquam odit et?
+                            </p>
+                        </div>
+                        <div id="tab-about-content" class="tab__content">
+                            <h2>Sobre</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam, libero eos atque
+                                ducimus culpa porro accusantium consectetur
+                                sint, quo amet laboriosam sapiente veritatis
+                                quibusdam tempore maxime nam animi iure delectus
+                                fuga non laudantium? Consequatur tempora veniam
+                                autem quas hic ipsa reprehenderit nihil dolorum
+                                minima perspiciatis voluptatum mollitia
+                                molestiae illo dignissimos, esse cupiditate eos
+                                accusamus deserunt ipsum at labore assumenda sed
+                                provident dolore! Ipsam odit voluptates dolorum
+                                sapiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
