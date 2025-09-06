@@ -1,0 +1,194 @@
+@import url("../../../css/global.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    background: url("../img/texture.png") repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eeeeff50;
+}
+
+.nav {
+    background: #2a2a3a;
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 15px 40px;
+
+    box-sizing: border-box;
+}
+
+.nav__logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav__logo:hover {
+    color: #7c7ccc;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #bbb;
+    text-decoration: underline;
+}
+
+.nav__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav__search input {
+    padding: 10px 10px 10px 40px;
+
+    font-family: var(--font-family-default);
+    font-size: 14px;
+
+    border: 2px solid #999;
+    border-radius: 5px;
+    outline: none;
+}
+
+.nav__search a {
+    position: absolute;
+    padding: 6px 8px;
+
+    color: #999;
+    font-size: 20px;
+
+    border-right: 2px solid #999;
+}
+
+.main__image {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 5;
+
+    height: 90%;
+    transform: scaleX(-1);
+}
+
+.main__content {
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+
+    top: 50%;
+    left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 5px 10px #00000030;
+    transform: translateY(-50%);
+}
+
+.main__content p {
+    font-size: 18px;
+}
+
+.main__content h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.main__content h3 {
+    position: relative;
+    font-size: 32px;
+    width: 450px;
+    margin-top: 16px;
+    white-space: nowrap;
+}
+
+.typing {
+    position: absolute;
+    top: 0;
+    left: 130px;
+
+    white-space: nowrap;
+}
+
+.typing div {
+    overflow: hidden;
+    padding-right: 2px;
+    color: #7c7ccc;
+    border-right: 2px solid #7c7ccc;
+    animation: typing__anim 5s steps(15) infinite alternate;
+}
+
+@keyframes typing__anim {
+    0% {
+        width: 10%;
+    }
+    40% {
+        width: 50%;
+    }
+    85%,
+    100% {
+        width: 100%;
+    }
+}
+
+.main__content__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.main__content__buttons button {
+    background-color: #7c7c9c;
+    padding: 10px 20px;
+
+    width: 150px;
+
+    color: #fff;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.main__content__buttons button:hover {
+    background-color: #5c5c7c;
+    transform: scale(0.9);
+}

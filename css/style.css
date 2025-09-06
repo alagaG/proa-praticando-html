@@ -51,6 +51,10 @@ ol {
     }
 }
 
+ol.projects__column {
+    list-style-type: decimal-leading-zero;
+}
+
 ol.projects__column > li {
     margin: 2px 0;
     transition: 0.5s ease;
